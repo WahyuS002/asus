@@ -6,7 +6,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="box-title">Daftar Foto Barang</h4>
+                        <h4 class="box-title">Daftar Foto Barang <small>"{{ $product->name }}"</small></h4>
                     </div>
                     <div class="card-body--">
                         <div class="table-stats order-table ov-h">

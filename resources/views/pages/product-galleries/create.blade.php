@@ -7,7 +7,7 @@
         </div>
         <div class="card-body card-block">
             <form action="{{ route('product-galleries.store') }}" method="POST" enctype="multipart/form-data">
-                @csrf
+                @csrf                
                 <div class="form-group">
                     <label for="name" class="form-control-label">Item Name</label>
                     <select name="products_id" class="form-control @error('products_id') is-invalid @enderror">

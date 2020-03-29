@@ -13,7 +13,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>$</th>
+                                        <th>#</th>
                                         <th>Name</th>
                                         <th>Type</th>
                                         <th>Price</th>
@@ -30,7 +30,7 @@
                                         <td>{{ $item->price }}</td>
                                         <td>{{ $item->quantity }}</td>
                                         <td>
-                                            <a href="#" class="btn btn-info btn-sm">
+                                            <a href="{{ route('products.gallery', $item->id) }}" class="btn btn-info btn-sm">
                                                 <i class="fa fa-picture-o"></i>
                                             </a>
                                             <a href="{{ route('products.edit', $item->id) }}" class="btn btn-primary btn-sm">
