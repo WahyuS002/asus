@@ -2,7 +2,7 @@
 <aside id="left-panel" class="left-panel">
     <nav class="navbar navbar-expand-sm navbar-default">
         <div id="main-menu" class="main-menu collapse navbar-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" id="myDIV">
                 <li class="active">
                     <a href="{{ route('dashboard') }}"><i class
                         ="menu-icon fa fa-laptop"></i>Dashboard </a>
@@ -32,3 +32,10 @@
     </nav>
 </aside>
 <!-- /#left-panel -->
+<script type="text/javascript">
+
+    $(document).on('click', 'menu-title', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+
+</script>

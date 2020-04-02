@@ -14,17 +14,17 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Name</th>
-                                        <th>Type</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Action</th>
+                                        <th>Nama</th>
+                                        <th>Tipe</th>
+                                        <th>Harga</th>
+                                        <th>Stok</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @forelse ($items as $item)
                                     <tr>
-                                        <td>1</td>
+                                        <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->type }}</td>
                                         <td>{{ $item->price }}</td>

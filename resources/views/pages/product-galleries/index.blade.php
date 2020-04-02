@@ -17,13 +17,13 @@
                                         <th>Nama Barang</th>
                                         <th>Foto</th>
                                         <th>Default</th>                                        
-                                        <th>Action</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @forelse ($items as $item)
                                     <tr>
-                                        <td>{{ $item->id }}</td>
+                                        <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->product->name }}</td>
                                         <td>
                                             <img src="{{ url($item->photo) }}" alt="">    

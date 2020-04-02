@@ -20,8 +20,8 @@ class CheckoutController extends Controller
 
         foreach ($request->transaction_details as $product) {
             $details[] = new TransactionDetail([
-                'transactions_id' => $transaction->id,
-                'products_id' => $product,
+                'transaction_id' => $transaction->id,
+                'product_id' => $product,
             ]);
 
             Product::find($product)->decrement('quantity');

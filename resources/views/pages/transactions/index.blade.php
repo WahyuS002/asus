@@ -16,16 +16,16 @@
                                         <th>#</th>
                                         <th>Nama</th>
                                         <th>Email</th>
-                                        <th>Number</th>                                        
-                                        <th>Transaction Total</th>
+                                        <th>NO HP</th>                                        
+                                        <th>Total Transaksi</th>
                                         <th>Status</th>
-                                        <th>Action</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @forelse ($items as $item)
                                     <tr>
-                                        <td>{{ $item->id }}</td>
+                                        <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->email }}</td>
                                         <td>{{ $item->number }}</td>
